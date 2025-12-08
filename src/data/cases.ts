@@ -22,7 +22,7 @@ export const caseStudies: CaseStudy[] = [
       tel: "026-255-5925",
       email: "shinanomachi.wlc@gmail.com",
     },
-    url: "http://iyashinomori.main.jp/",
+    url: "≈http://iyashinomori.main.jp/",
     overview:
       "長野県信濃町では、合併しないまちづくりを選択する中で、地域グループが主体となって「癒しの森」事業を提案。町独自で「森林メディカルトレーナー」と「癒しの森の宿」の育成・認定等を行い、地域の民間のガイドと宿泊施設を主体化。事業化段階の初動期には地域住民向けの健康講座を通して体験プログラムの上質化・ガイドのスキルアップを図り、その後、企業との協定締結による連携を促進。現在では35の企業等と協定を締結し、社員研修・福利厚生等で年間4,000泊を越える需要を創出。",
     highlights: [
