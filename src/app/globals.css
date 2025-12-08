@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  /* Forest-themed color palette */
+  --forest-deep: #1a3a2f;
+  --forest-moss: #3d5a47;
+  --forest-leaf: #5b8a72;
+  --earth-warm: #8b7355;
+  --sky-mist: #e8f0ec;
+  --accent-sunlight: #d4a84b;
+  
+  /* Semantic colors */
+  --background: #fafbfa;
+  --foreground: #1a3a2f;
+  --muted: #f5f7f6;
+  --muted-foreground: #5b6b63;
+  --border: #d4ddd8;
+  --card: #ffffff;
+  --card-foreground: #1a3a2f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  
+  --color-forest-deep: var(--forest-deep);
+  --color-forest-moss: var(--forest-moss);
+  --color-forest-leaf: var(--forest-leaf);
+  --color-earth-warm: var(--earth-warm);
+  --color-sky-mist: var(--sky-mist);
+  --color-accent-sunlight: var(--accent-sunlight);
+  
+  --font-sans: var(--font-noto-sans-jp);
+  --font-heading: var(--font-zen-kaku);
+  --font-display: var(--font-dm-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-noto-sans-jp), sans-serif;
+  line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-zen-kaku), sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sky-mist);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--forest-leaf);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--forest-moss);
+}
+
+/* Selection color */
+::selection {
+  background: var(--forest-leaf);
+  color: white;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--forest-leaf);
+  outline-offset: 2px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Category colors */
+.category-health-gov {
+  --category-color: #2d6a4f;
+  --category-bg: #d8f3dc;
+}
+
+.category-health-private {
+  --category-color: #1d7874;
+  --category-bg: #d0f4de;
+}
+
+.category-public-private {
+  --category-color: #4361ee;
+  --category-bg: #e0e7ff;
+}
+
+.category-forest-owner {
+  --category-color: #7c4a03;
+  --category-bg: #fff3cd;
+}
+
+.category-corporate {
+  --category-color: #5f3dc4;
+  --category-bg: #ede9fe;
+}
